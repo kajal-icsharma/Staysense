@@ -218,35 +218,50 @@ router.get('/hotels/:id/downvote', isLoggedIn, async (req, res) => {
 	}
 });
 
-// router.get('/seed', async (req, res) => {
-// 	try {
-// 		for (let i = 0; i < 60; i++) {
-// 			let hotel = new Hotel({
-// 				name: 'Hotel Grande',
-// 				geometry: {
-// 					type: 'Point',
-// 					coordinates: [ 72.877393, 19.07599 ]
-// 				},
-// 				address: 'Mumbai',
-// 				price: 7000,
-// 				images: [
-// 					{
-// 						url:
-// 							'https://res.cloudinary.com/ddd8fp5u4/image/upload/v1683906301/Staysense/nrbza7ddzmdff7d0hdzc.jpg',
-// 						filename: 'Staysense/nrbza7ddzmdff7d0hdzc'
-// 					}
-// 				],
-// 				upvotes: [],
-// 				downvotes: []
-// 			});
-// 			hotel.author = req.user;
-// 			await hotel.save();
-// 		}
-// 		res.send('done');
-// 	} catch (error) {
-// 		console.log(error);
-// 	}
-// });
+router.get('/seed', async (req, res) => {
+	try {
+		for (let i = 0; i < 10; i++) {
+			let hotel = new Hotel({
+				name: 'Hotel Olivia',
+				geometry: {
+					type: 'Point',
+					coordinates: [ 86.320377, 20.44263 ]
+				},
+				address: 'Jaipur-Delhi Highway, NH11, Kukas, Jaipur',
+				price: 7000,
+				images: [
+					{
+						url:
+							'https://res.cloudinary.com/ddd8fp5u4/image/upload/v1684763819/Staysense/qiqodf1ocskgjc9yfovu.jpg',
+						filename: 'Staysense/qiqodf1ocskgjc9yfovu'
+					},
+					{
+						url:
+							'https://res.cloudinary.com/ddd8fp5u4/image/upload/v1684763821/Staysense/bngiwmyoqs53daqy9ftc.jpg',
+						filename: 'Staysense/bngiwmyoqs53daqy9ftc'
+					},
+					{
+						url:
+							'https://res.cloudinary.com/ddd8fp5u4/image/upload/v1684763822/Staysense/ynodesnbdpw0hqnd8wf3.png',
+						filename: 'Staysense/ynodesnbdpw0hqnd8wf3'
+					},
+					{
+						url:
+							'https://res.cloudinary.com/ddd8fp5u4/image/upload/v1684763824/Staysense/es2bgafhxn2k1thvsgon.jpg',
+						filename: 'Staysense/es2bgafhxn2k1thvsgon'
+					}
+				],
+				upvotes: [],
+				downvotes: []
+			});
+			hotel.author = req.user;
+			await hotel.save();
+		}
+		res.send('done');
+	} catch (error) {
+		console.log(error);
+	}
+});
 
 router.get('/hotels/:id/checkout/success', (req, res) => {
 	res.send('payment done');

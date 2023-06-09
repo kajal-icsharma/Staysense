@@ -205,19 +205,6 @@ section{
 }
 
 
-/* .section-2 .search-container{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height:3rem;
-    transform: translateY(5rem);
-    -webkit-transform: translateY(5rem);
-    -moz-transform: translateY(5rem);
-    -ms-transform: translateY(5rem);
-    -o-transform: translateY(5rem);
-} */
-
 
 .section-2 .input-group{
     width:40%;
@@ -254,39 +241,32 @@ section{
 }
 
 .section3{
-    padding: 3rem 4rem 3rem 4rem;
+    padding: 2rem 5rem 2rem 5rem;
     background-color: rgb(255, 255, 255);
     color: #000000;
     font-size: 2rem;
     display: grid;
-    height:160vh;
-
-
-    /* grid-template-rows: 50vh 50vh 50vh;
-    grid-template-columns: 33vw 33vw 33vw; */
+    height:170vh;
 
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
-    column-gap: 3rem;
+    column-gap: 3.5rem;
 
 }
 
 .section3 .hotel-card{
-
     background-color: rgba(0, 0, 0, 0.44);
-    /* height:48vh;
-    width:25vw; */
-    display: flex;
+    /*height:48vh;
+    width:25vw;
+    */display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
 
 }
 
 .section3 .hotel-card .carousel-inner{
-    height:70%;
+    height:55%;
     width: 100%;
 
 }
@@ -309,17 +289,32 @@ section{
     background-position:bottom;
 }
 
-.section3 .hotel-card a{
-    width: 40%;
-    height: 8%;
+.section3 .hotel-card .description-box{
+    height:45%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.section3 .hotel-card a{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
-    margin-left: 1rem;
+    font-size: 1rem;
+    /* margin-left: 1rem; */
 
 
+}
+
+.section3 .hotel-card .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
 }
 
 .section3 .hotel-card .abc{
@@ -330,64 +325,34 @@ section{
 
 }
 
+
+
 .pulse{
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #12ebae);
-    /* background-color: rgb(0, 204, 184); */
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #0fd19a);
     border: #0004ff;
     text-decoration: none;
     color: aliceblue;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
     height: 80%;
     width:30%;
     font-size: 1rem;
     font-family: 'Abel', sans-serif;
-
 }
 
 .pulse:hover, 
 .pulse:focus {
   animation: pulse 1s;
   box-shadow: 0 0 0 2em transparent;
+  color: #000000;
 }
 
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgb(0, 166, 149); }
 }
-
-
-
-/* .section-3 .body1{
-    background-image: url('/images/bedroom2.jpg');
-    background-color: #ffffff;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:bottom;
-    background-attachment: fixed;
-    height: 80vh;
-    width: 90%;
-    
-}
-
-.section-3 .body1 .info{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    height:30%;
-    width: 100%;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.411);
-} */
-
-
-
 
 
 .section-4{

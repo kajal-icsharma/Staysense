@@ -133,7 +133,7 @@
 <% if (currentUser && hotel.author._id.equals(currentUser._id)) { %>
   <div class ="edit-delete"><a class="edit-btn" href="/hotels/<%= hotel._id %>/edit">EDIT HOTEL</a>
   <form action="/hotels/<%= hotel._id %>?_method=DELETE" method="post">
-      <input class="delete-btn" type="submit" value="DELETE HOTEL">
+      <input class="delete-btn"  type="submit" value="DELETE HOTEL">
   </form>
 </div>
   <% } %>
